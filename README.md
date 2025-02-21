@@ -103,7 +103,7 @@ The project is relatively simple to build. The external dependency not included 
 If you have a command line compiler like clang of gcc, and glfw3 is in path, you could simply run a following command in your terminal (± the OpenGL libs, depending on your system)
 
 ```
-gcc -std=c11 -I. extern/glad.c main.c -o lines -lglfw3 -lopengl32
+gcc -std=c11 -I. extern/glad.c main.c -o lines -lglfw3 -lOpenGL -lm -ldl
 ```
 
 The source tree also includes a CMakeLists.txt to generate build files, if that's your jam.
